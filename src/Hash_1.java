@@ -27,6 +27,9 @@ public class Hash_1 {
 		for (String friends : completion) {
 			map.put(friends, map.getOrDefault(friends, 0) - 1);
 		}
+		// HashMap.getOrDefault('B', 0) 함수는 B라는 key에 해당하는 value 가 있다면 가져오고 
+		// 아닐 경우 0을 default로 지정하는 의미의 함수이다. 
+		
 		Iterator<Map.Entry<String, Integer>> iter = map.entrySet().iterator();
 		
 		// Hashmap 을 돌면서 value 가 0이 아닌 사람 찾기
